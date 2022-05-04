@@ -1,6 +1,0 @@
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\CodedUITest\bin\Debug\CodedUITest.dll
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\CodedUITest\bin\Debug\CodedUITest.pdb
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\CodedUITest\obj\Debug\CodedUITest.csproj.AssemblyReference.cache
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\CodedUITest\obj\Debug\CodedUITest.csproj.CoreCompileInputs.cache
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\CodedUITest\obj\Debug\CodedUITest.dll
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\CodedUITest\obj\Debug\CodedUITest.pdb
