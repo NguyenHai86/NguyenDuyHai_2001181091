@@ -40,10 +40,7 @@ namespace CodedUITestProject
             WinEdit uITxtDiemRenLuyenEdit = this.UIForm1Window.UITxtDiemRenLuyenWindow.UITxtDiemRenLuyenEdit;
             WinEdit uITxtXepLoaiEdit = this.UIForm1Window.UITxtXepLoaiWindow.UITxtXepLoaiEdit;
             #endregion
-
-            // Launch '%USERPROFILE%\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe'
-            ApplicationUnderTest uIForm1Window = ApplicationUnderTest.Launch(this.RecordedMethod_addValueNumberParams.UIForm1WindowExePath, this.RecordedMethod_addValueNumberParams.UIForm1WindowAlternateExePath);
-
+            
             // Type '8' in 'txtDiemToan' text box
             uITxtDiemToanEdit.Text = diemToan;
 

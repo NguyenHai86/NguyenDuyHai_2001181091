@@ -30,6 +30,8 @@ namespace CodedUITestProject
         public void setup()
         {
             Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.Disabled;
+            string fileAddress = @"C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe";
+            ApplicationUnderTest.Launch(fileAddress);
         }
 
         [TestMethod]
@@ -37,14 +39,12 @@ namespace CodedUITestProject
         {
             this.UIMap.RecordedMethod_addValueNumber("2","4","6","8");
             this.UIMap.AssertMethod_XepLoai("Yeu");
-
         }
         [TestMethod]
         public void CodedUITestMethodRandom()
         {
             Random rd = new Random();
             this.UIMap.RecordedMethod_addValueNumber(rd.Next(1,10).ToString(), rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString());
-
         }
         [TestMethod]
         public void CodedUITestMethodRandom10()
