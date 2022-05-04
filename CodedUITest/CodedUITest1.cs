@@ -22,15 +22,20 @@ namespace CodedUITest
         {
         }
 
+        //[TestMethod]
+        //public void CodedUITestMethod1()
+        //{
+
+
+
+        //}
         [TestMethod]
-        public void CodedUITestMethod1()
+        public void CodedUITestMethod2()
         {
 
-            this.UIMap.RecordedMethod1(2,5,6,9);
-            this.UIMap.AssertMethod1("Yeu");
+            this.UIMap.RecordedMethod6();
 
         }
-
         #region Additional test attributes
 
         // You can use the following additional attributes as you write your tests:

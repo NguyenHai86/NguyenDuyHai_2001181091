@@ -181,7 +181,6 @@ namespace NguyenDuyHai_2001181091
             // 
             // Form1
             // 
-            this.AcceptButton = this.btnXepLoai;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;

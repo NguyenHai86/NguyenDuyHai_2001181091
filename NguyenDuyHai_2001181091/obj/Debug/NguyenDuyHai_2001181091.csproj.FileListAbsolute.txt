@@ -1,7 +1,6 @@
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe.config
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.pdb
-C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.csproj.AssemblyReference.cache
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.Form1.resources
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.Properties.Resources.resources
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.csproj.GenerateResource.cache
