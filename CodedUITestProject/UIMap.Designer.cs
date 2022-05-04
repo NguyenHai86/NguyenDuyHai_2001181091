@@ -79,14 +79,15 @@ namespace CodedUITestProject
         /// <summary>
         /// AssertMethod1 - Use 'AssertMethod1ExpectedValues' to pass parameters into this method.
         /// </summary>
-        public void AssertMethod_XepLoai()
+        public void AssertMethod_XepLoai(string valueExcept)
         {
             #region Variable Declarations
             WinWindow uITxtXepLoaiWindow = this.UIForm1Window.UIForm1Client.UITxtXepLoaiWindow;
             #endregion
 
             // Verify that the 'ControlName' property of 'txtXepLoai' window equals 'txtXepLoai'
-            Assert.AreEqual(this.AssertMethod1ExpectedValues.UITxtXepLoaiWindowControlName, uITxtXepLoaiWindow.ControlName);
+            var edit = new WinEdit(this.UIForm1Window.UITxtXepLoaiWindow.UITxtXepLoaiEdit);
+            Assert.AreEqual(valueExcept, edit.Text);
         }
         
         #region Properties

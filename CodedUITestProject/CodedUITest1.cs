@@ -26,8 +26,8 @@ namespace CodedUITestProject
         public void CodedUITestMethod1()
         {
 
-            this.UIMap.RecordedMethod_addValueNumber(2,8,9,7);
-            this.UIMap.AssertMethod_XepLoai();
+            this.UIMap.RecordedMethod_addValueNumber(9,8,9,7);
+            this.UIMap.AssertMethod_XepLoai("Yeu");
 
         }
 
