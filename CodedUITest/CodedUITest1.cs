@@ -26,7 +26,7 @@ namespace CodedUITest
         public void CodedUITestMethod1()
         {
 
-            this.UIMap.RecordedMethod1();
+            this.UIMap.RecordedMethod1(4,5,6,9);
             this.UIMap.AssertMethod1();
 
         }
