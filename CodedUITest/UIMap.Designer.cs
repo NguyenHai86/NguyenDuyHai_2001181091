@@ -30,11 +30,9 @@ namespace CodedUITest
     {
         public static void ClickCenter(UITestControl control)
         {
-            Point location = control.BoundingRectangle.Location;
-            location.Offset(control.BoundingRectangle.Width / 2,
-                            control.BoundingRectangle.Height / 2);
-
-            Mouse.Click(location);
+            Point location = new System.Drawing.Point(control.BoundingRectangle.Left + control.BoundingRectangle.Width / 2, control.BoundingRectangle.Top + control.BoundingRectangle.Height / 2);
+            Mouse.Hover(location);
+            Mouse.Click();
         }
         /// <summary>
         /// RecordedMethod1 - Use 'RecordedMethod1Params' to pass parameters into this method.
@@ -73,12 +71,6 @@ namespace CodedUITest
 
             // Type '5' in 'txtDiemRenLuyen' text box
             uITxtDiemRenLuyenEdit.Text = diemRenLuyen.ToString();
-
-            // Type '{Tab}' in 'txtDiemRenLuyen' text box
-            Keyboard.SendKeys(uITxtDiemRenLuyenEdit, this.RecordedMethod1Params.UITxtDiemRenLuyenEditSendKeys, ModifierKeys.None);
-
-            // Type '55' in 'txtXepLoai' text box
-            uITxtXepLoaiEdit.Text = this.RecordedMethod1Params.UITxtXepLoaiEditText;
 
             // Click 'Xếp loại' window
             ClickCenter(uIXếploạiWindow);
