@@ -8,7 +8,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 
-namespace CodedUITestProject
+namespace CodedUITest
 {
     using System;
     using System.CodeDom.Compiler;
@@ -28,7 +28,14 @@ namespace CodedUITestProject
     [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
     public partial class UIMap
     {
-        
+        public static void ClickCenter(UITestControl control)
+        {
+            Point location = control.BoundingRectangle.Location;
+            location.Offset(control.BoundingRectangle.Width / 2,
+                            control.BoundingRectangle.Height / 2);
+
+            Mouse.Click(location);
+        }
         /// <summary>
         /// RecordedMethod1 - Use 'RecordedMethod1Params' to pass parameters into this method.
         /// </summary>
@@ -39,35 +46,42 @@ namespace CodedUITestProject
             WinEdit uITxtDiemLyEdit = this.UIForm1Window.UITxtDiemLyWindow.UITxtDiemLyEdit;
             WinEdit uITxtDiemHoaEdit = this.UIForm1Window.UITxtDiemHoaWindow.UITxtDiemHoaEdit;
             WinEdit uITxtDiemRenLuyenEdit = this.UIForm1Window.UITxtDiemRenLuyenWindow.UITxtDiemRenLuyenEdit;
+            WinEdit uITxtXepLoaiEdit = this.UIForm1Window.UITxtXepLoaiWindow.UITxtXepLoaiEdit;
             WinWindow uIXếploạiWindow = this.UIForm1Window.UIForm1Client.UIXếploạiWindow;
             #endregion
 
             // Launch '%USERPROFILE%\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe'
             ApplicationUnderTest uIForm1Window = ApplicationUnderTest.Launch(this.RecordedMethod1Params.UIForm1WindowExePath, this.RecordedMethod1Params.UIForm1WindowAlternateExePath);
 
-            // Type '8' in 'txtDiemToan' text box
+            // Type '5' in 'txtDiemToan' text box
             uITxtDiemToanEdit.Text = this.RecordedMethod1Params.UITxtDiemToanEditText;
 
             // Type '{Tab}' in 'txtDiemToan' text box
             Keyboard.SendKeys(uITxtDiemToanEdit, this.RecordedMethod1Params.UITxtDiemToanEditSendKeys, ModifierKeys.None);
 
-            // Type '9' in 'txtDiemLy' text box
+            // Type '6' in 'txtDiemLy' text box
             uITxtDiemLyEdit.Text = this.RecordedMethod1Params.UITxtDiemLyEditText;
 
             // Type '{Tab}' in 'txtDiemLy' text box
             Keyboard.SendKeys(uITxtDiemLyEdit, this.RecordedMethod1Params.UITxtDiemLyEditSendKeys, ModifierKeys.None);
 
-            // Type '5' in 'txtDiemHoa' text box
+            // Type '9' in 'txtDiemHoa' text box
             uITxtDiemHoaEdit.Text = this.RecordedMethod1Params.UITxtDiemHoaEditText;
 
             // Type '{Tab}' in 'txtDiemHoa' text box
             Keyboard.SendKeys(uITxtDiemHoaEdit, this.RecordedMethod1Params.UITxtDiemHoaEditSendKeys, ModifierKeys.None);
 
-            // Type '6' in 'txtDiemRenLuyen' text box
+            // Type '5' in 'txtDiemRenLuyen' text box
             uITxtDiemRenLuyenEdit.Text = this.RecordedMethod1Params.UITxtDiemRenLuyenEditText;
 
+            // Type '{Tab}' in 'txtDiemRenLuyen' text box
+            Keyboard.SendKeys(uITxtDiemRenLuyenEdit, this.RecordedMethod1Params.UITxtDiemRenLuyenEditSendKeys, ModifierKeys.None);
+
+            // Type '55' in 'txtXepLoai' text box
+            uITxtXepLoaiEdit.Text = this.RecordedMethod1Params.UITxtXepLoaiEditText;
+
             // Click 'Xếp loại' window
-            Mouse.Click(uIXếploạiWindow, new Point(213, 186));
+            ClickCenter(uIXếploạiWindow);
         }
         
         /// <summary>
@@ -81,67 +95,6 @@ namespace CodedUITestProject
 
             // Verify that the 'ControlName' property of 'txtXepLoai' window equals 'txtXepLoai'
             Assert.AreEqual(this.AssertMethod1ExpectedValues.UITxtXepLoaiWindowControlName, uITxtXepLoaiWindow.ControlName);
-        }
-        
-        /// <summary>
-        /// RecordedMethod2 - Use 'RecordedMethod2Params' to pass parameters into this method.
-        /// </summary>
-        public void RecordedMethod2()
-        {
-            #region Variable Declarations
-            WinEdit uITxtDiemToanEdit = this.UIForm1Window.UITxtDiemToanWindow.UITxtDiemToanEdit;
-            WinEdit uITxtDiemLyEdit = this.UIForm1Window.UITxtDiemLyWindow.UITxtDiemLyEdit;
-            WinEdit uITxtDiemHoaEdit = this.UIForm1Window.UITxtDiemHoaWindow.UITxtDiemHoaEdit;
-            WinEdit uITxtDiemRenLuyenEdit = this.UIForm1Window.UITxtDiemRenLuyenWindow.UITxtDiemRenLuyenEdit;
-            WinEdit uITxtXepLoaiEdit = this.UIForm1Window.UITxtXepLoaiWindow.UITxtXepLoaiEdit;
-            WinWindow uIXếploạiWindow = this.UIForm1Window.UIForm1Client.UIXếploạiWindow;
-            #endregion
-
-            // Launch '%USERPROFILE%\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe'
-            ApplicationUnderTest uIForm1Window = ApplicationUnderTest.Launch(this.RecordedMethod2Params.UIForm1WindowExePath, this.RecordedMethod2Params.UIForm1WindowAlternateExePath);
-
-            // Type '5' in 'txtDiemToan' text box
-            uITxtDiemToanEdit.Text = this.RecordedMethod2Params.UITxtDiemToanEditText;
-
-            // Type '{Tab}' in 'txtDiemToan' text box
-            Keyboard.SendKeys(uITxtDiemToanEdit, this.RecordedMethod2Params.UITxtDiemToanEditSendKeys, ModifierKeys.None);
-
-            // Type '6' in 'txtDiemLy' text box
-            uITxtDiemLyEdit.Text = this.RecordedMethod2Params.UITxtDiemLyEditText;
-
-            // Type '{Tab}' in 'txtDiemLy' text box
-            Keyboard.SendKeys(uITxtDiemLyEdit, this.RecordedMethod2Params.UITxtDiemLyEditSendKeys, ModifierKeys.None);
-
-            // Type '9' in 'txtDiemHoa' text box
-            uITxtDiemHoaEdit.Text = this.RecordedMethod2Params.UITxtDiemHoaEditText;
-
-            // Type '{Tab}' in 'txtDiemHoa' text box
-            Keyboard.SendKeys(uITxtDiemHoaEdit, this.RecordedMethod2Params.UITxtDiemHoaEditSendKeys, ModifierKeys.None);
-
-            // Type '5' in 'txtDiemRenLuyen' text box
-            uITxtDiemRenLuyenEdit.Text = this.RecordedMethod2Params.UITxtDiemRenLuyenEditText;
-
-            // Type '{Tab}' in 'txtDiemRenLuyen' text box
-            Keyboard.SendKeys(uITxtDiemRenLuyenEdit, this.RecordedMethod2Params.UITxtDiemRenLuyenEditSendKeys, ModifierKeys.None);
-
-            // Type '88' in 'txtXepLoai' text box
-            uITxtXepLoaiEdit.Text = this.RecordedMethod2Params.UITxtXepLoaiEditText;
-
-            // Click 'Xếp loại' window
-            Mouse.Click(uIXếploạiWindow, new Point(278, 160));
-        }
-        
-        /// <summary>
-        /// AssertMethod2 - Use 'AssertMethod2ExpectedValues' to pass parameters into this method.
-        /// </summary>
-        public void AssertMethod2()
-        {
-            #region Variable Declarations
-            WinWindow uITxtXepLoaiWindow = this.UIForm1Window.UIForm1Client.UITxtXepLoaiWindow;
-            #endregion
-
-            // Verify that the 'ControlName' property of 'txtXepLoai' window equals 'txtXepLoai'
-            Assert.AreEqual(this.AssertMethod2ExpectedValues.UITxtXepLoaiWindowControlName, uITxtXepLoaiWindow.ControlName);
         }
         
         #region Properties
@@ -169,30 +122,6 @@ namespace CodedUITestProject
             }
         }
         
-        public virtual RecordedMethod2Params RecordedMethod2Params
-        {
-            get
-            {
-                if ((this.mRecordedMethod2Params == null))
-                {
-                    this.mRecordedMethod2Params = new RecordedMethod2Params();
-                }
-                return this.mRecordedMethod2Params;
-            }
-        }
-        
-        public virtual AssertMethod2ExpectedValues AssertMethod2ExpectedValues
-        {
-            get
-            {
-                if ((this.mAssertMethod2ExpectedValues == null))
-                {
-                    this.mAssertMethod2ExpectedValues = new AssertMethod2ExpectedValues();
-                }
-                return this.mAssertMethod2ExpectedValues;
-            }
-        }
-        
         public UIForm1Window UIForm1Window
         {
             get
@@ -211,10 +140,6 @@ namespace CodedUITestProject
         
         private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;
         
-        private RecordedMethod2Params mRecordedMethod2Params;
-        
-        private AssertMethod2ExpectedValues mAssertMethod2ExpectedValues;
-        
         private UIForm1Window mUIForm1Window;
         #endregion
     }
@@ -224,78 +149,6 @@ namespace CodedUITestProject
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
     public class RecordedMethod1Params
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Launch '%USERPROFILE%\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe'
-        /// </summary>
-        public string UIForm1WindowExePath = "C:\\Users\\nguye\\Desktop\\NguyenDuyHai_2001181091\\NguyenDuyHai_2001181091\\bin\\Debug\\" +
-            "NguyenDuyHai_2001181091.exe";
-        
-        /// <summary>
-        /// Launch '%USERPROFILE%\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe'
-        /// </summary>
-        public string UIForm1WindowAlternateExePath = "%USERPROFILE%\\Desktop\\NguyenDuyHai_2001181091\\NguyenDuyHai_2001181091\\bin\\Debug\\N" +
-            "guyenDuyHai_2001181091.exe";
-        
-        /// <summary>
-        /// Type '8' in 'txtDiemToan' text box
-        /// </summary>
-        public string UITxtDiemToanEditText = "8";
-        
-        /// <summary>
-        /// Type '{Tab}' in 'txtDiemToan' text box
-        /// </summary>
-        public string UITxtDiemToanEditSendKeys = "{Tab}";
-        
-        /// <summary>
-        /// Type '9' in 'txtDiemLy' text box
-        /// </summary>
-        public string UITxtDiemLyEditText = "9";
-        
-        /// <summary>
-        /// Type '{Tab}' in 'txtDiemLy' text box
-        /// </summary>
-        public string UITxtDiemLyEditSendKeys = "{Tab}";
-        
-        /// <summary>
-        /// Type '5' in 'txtDiemHoa' text box
-        /// </summary>
-        public string UITxtDiemHoaEditText = "5";
-        
-        /// <summary>
-        /// Type '{Tab}' in 'txtDiemHoa' text box
-        /// </summary>
-        public string UITxtDiemHoaEditSendKeys = "{Tab}";
-        
-        /// <summary>
-        /// Type '6' in 'txtDiemRenLuyen' text box
-        /// </summary>
-        public string UITxtDiemRenLuyenEditText = "6";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'AssertMethod1'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
-    public class AssertMethod1ExpectedValues
-    {
-        
-        #region Fields
-        /// <summary>
-        /// Verify that the 'ControlName' property of 'txtXepLoai' window equals 'txtXepLoai'
-        /// </summary>
-        public string UITxtXepLoaiWindowControlName = "txtXepLoai";
-        #endregion
-    }
-    
-    /// <summary>
-    /// Parameters to be passed into 'RecordedMethod2'
-    /// </summary>
-    [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
-    public class RecordedMethod2Params
     {
         
         #region Fields
@@ -352,17 +205,17 @@ namespace CodedUITestProject
         public string UITxtDiemRenLuyenEditSendKeys = "{Tab}";
         
         /// <summary>
-        /// Type '88' in 'txtXepLoai' text box
+        /// Type '55' in 'txtXepLoai' text box
         /// </summary>
-        public string UITxtXepLoaiEditText = "88";
+        public string UITxtXepLoaiEditText = "55";
         #endregion
     }
     
     /// <summary>
-    /// Parameters to be passed into 'AssertMethod2'
+    /// Parameters to be passed into 'AssertMethod1'
     /// </summary>
     [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
-    public class AssertMethod2ExpectedValues
+    public class AssertMethod1ExpectedValues
     {
         
         #region Fields
@@ -435,18 +288,6 @@ namespace CodedUITestProject
             }
         }
         
-        public UIForm1Client UIForm1Client
-        {
-            get
-            {
-                if ((this.mUIForm1Client == null))
-                {
-                    this.mUIForm1Client = new UIForm1Client(this);
-                }
-                return this.mUIForm1Client;
-            }
-        }
-        
         public UITxtXepLoaiWindow UITxtXepLoaiWindow
         {
             get
@@ -456,6 +297,18 @@ namespace CodedUITestProject
                     this.mUITxtXepLoaiWindow = new UITxtXepLoaiWindow(this);
                 }
                 return this.mUITxtXepLoaiWindow;
+            }
+        }
+        
+        public UIForm1Client UIForm1Client
+        {
+            get
+            {
+                if ((this.mUIForm1Client == null))
+                {
+                    this.mUIForm1Client = new UIForm1Client(this);
+                }
+                return this.mUIForm1Client;
             }
         }
         #endregion
@@ -469,9 +322,9 @@ namespace CodedUITestProject
         
         private UITxtDiemRenLuyenWindow mUITxtDiemRenLuyenWindow;
         
-        private UIForm1Client mUIForm1Client;
-        
         private UITxtXepLoaiWindow mUITxtXepLoaiWindow;
+        
+        private UIForm1Client mUIForm1Client;
         #endregion
     }
     
@@ -620,6 +473,42 @@ namespace CodedUITestProject
     }
     
     [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
+    public class UITxtXepLoaiWindow : WinWindow
+    {
+        
+        public UITxtXepLoaiWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Search Criteria
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "txtXepLoai";
+            this.WindowTitles.Add("Form1");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UITxtXepLoaiEdit
+        {
+            get
+            {
+                if ((this.mUITxtXepLoaiEdit == null))
+                {
+                    this.mUITxtXepLoaiEdit = new WinEdit(this);
+                    #region Search Criteria
+                    this.mUITxtXepLoaiEdit.SearchProperties[WinEdit.PropertyNames.Name] = "Kết quả xếp loại";
+                    this.mUITxtXepLoaiEdit.WindowTitles.Add("Form1");
+                    #endregion
+                }
+                return this.mUITxtXepLoaiEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUITxtXepLoaiEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
     public class UIForm1Client : WinClient
     {
         
@@ -672,42 +561,6 @@ namespace CodedUITestProject
         private WinWindow mUIXếploạiWindow;
         
         private WinWindow mUITxtXepLoaiWindow;
-        #endregion
-    }
-    
-    [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
-    public class UITxtXepLoaiWindow : WinWindow
-    {
-        
-        public UITxtXepLoaiWindow(UITestControl searchLimitContainer) : 
-                base(searchLimitContainer)
-        {
-            #region Search Criteria
-            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "txtXepLoai";
-            this.WindowTitles.Add("Form1");
-            #endregion
-        }
-        
-        #region Properties
-        public WinEdit UITxtXepLoaiEdit
-        {
-            get
-            {
-                if ((this.mUITxtXepLoaiEdit == null))
-                {
-                    this.mUITxtXepLoaiEdit = new WinEdit(this);
-                    #region Search Criteria
-                    this.mUITxtXepLoaiEdit.SearchProperties[WinEdit.PropertyNames.Name] = "Kết quả xếp loại";
-                    this.mUITxtXepLoaiEdit.WindowTitles.Add("Form1");
-                    #endregion
-                }
-                return this.mUITxtXepLoaiEdit;
-            }
-        }
-        #endregion
-        
-        #region Fields
-        private WinEdit mUITxtXepLoaiEdit;
         #endregion
     }
 }

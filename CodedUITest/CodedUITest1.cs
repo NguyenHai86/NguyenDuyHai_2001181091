@@ -10,7 +10,7 @@ using System.Windows.Input;
 using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
 
 
-namespace CodedUITestProject
+namespace CodedUITest
 {
     /// <summary>
     /// Summary description for CodedUITest1
@@ -23,19 +23,14 @@ namespace CodedUITestProject
         }
 
         [TestMethod]
-        //public void CodedUITestMethod1()
-        //{
-
-        //    this.UIMap.RecordedMethod1(2,5,6,9);
-        //    this.UIMap.AssertMethod1("Yeu");
-        //}
-        public void CodedUITestMethod2()
+        public void CodedUITestMethod1()
         {
 
-            this.UIMap.RecordedMethod2();
-            this.UIMap.AssertMethod2();
+            this.UIMap.RecordedMethod1();
+            this.UIMap.AssertMethod1();
 
         }
+
         #region Additional test attributes
 
         // You can use the following additional attributes as you write your tests:

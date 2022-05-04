@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="a7e1f62e-20f1-44ae-add4-d201fdbd7b11" AssemblyVersion="16.0.31306.167" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="894ccae7-1eea-412b-915a-19fcf5964f74" AssemblyVersion="16.0.31306.167" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
   <Configuration>
     <Group Name="IE">
       <Setting Name="Version" Value="9.11.22000.0" WarningLevel="1" />
@@ -42,84 +42,6 @@
   </Configuration>
   <InitializeActions />
   <ExecuteActions>
-    <LaunchApplicationAction UIObjectName="UIMap.UIForm1Window">
-      <ParameterName />
-      <FileName>C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe</FileName>
-      <AlternateFileName>%USERPROFILE%\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe</AlternateFileName>
-    </LaunchApplicationAction>
-    <SetValueAction UIObjectName="UIMap.UIForm1Window.UITxtDiemToanWindow.UITxtDiemToanEdit">
-      <ParameterName />
-      <Value Encoded="false">8</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <SendKeysAction UIObjectName="UIMap.UIForm1Window.UITxtDiemToanWindow.UITxtDiemToanEdit">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Text Encoded="false">{Tab}</Text>
-    </SendKeysAction>
-    <SetValueAction UIObjectName="UIMap.UIForm1Window.UITxtDiemLyWindow.UITxtDiemLyEdit">
-      <ParameterName />
-      <Value Encoded="false">9</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <SendKeysAction UIObjectName="UIMap.UIForm1Window.UITxtDiemLyWindow.UITxtDiemLyEdit">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Text Encoded="false">{Tab}</Text>
-    </SendKeysAction>
-    <SetValueAction UIObjectName="UIMap.UIForm1Window.UITxtDiemHoaWindow.UITxtDiemHoaEdit">
-      <ParameterName />
-      <Value Encoded="false">5</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <SendKeysAction UIObjectName="UIMap.UIForm1Window.UITxtDiemHoaWindow.UITxtDiemHoaEdit">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Text Encoded="false">{Tab}</Text>
-    </SendKeysAction>
-    <SetValueAction UIObjectName="UIMap.UIForm1Window.UITxtDiemRenLuyenWindow.UITxtDiemRenLuyenEdit">
-      <ParameterName />
-      <Value Encoded="false">6</Value>
-      <Type>String</Type>
-    </SetValueAction>
-    <MouseAction UIObjectName="UIMap.UIForm1Window.UIForm1Client.UIXếploạiWindow">
-      <ParameterName />
-      <ModifierKeys>None</ModifierKeys>
-      <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="213" Y="186" />
-      <WheelDirection>0</WheelDirection>
-      <ActionType>Click</ActionType>
-      <MouseButton>Left</MouseButton>
-    </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="RecordedMethod1">
-      <ParameterName />
-      <StepId>-1</StepId>
-      <Direction>Start</Direction>
-      <Outcome />
-      <Disabled>false</Disabled>
-      <WorkItemId>0</WorkItemId>
-      <MarkerRegionType>Action</MarkerRegionType>
-    </TestStepMarkerAction>
-    <AssertAction UIObjectName="UIMap.UIForm1Window.UIForm1Client.UITxtXepLoaiWindow">
-      <ParameterName />
-      <PropertyName>ControlName</PropertyName>
-      <ExpectedValue>txtXepLoai</ExpectedValue>
-      <MessageOnValidationFailure />
-      <Type>String</Type>
-      <PropertyCondition>AreEqual</PropertyCondition>
-    </AssertAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="AssertMethod1">
-      <ParameterName />
-      <StepId>-1</StepId>
-      <Direction>Start</Direction>
-      <Outcome />
-      <Disabled>false</Disabled>
-      <WorkItemId>0</WorkItemId>
-      <MarkerRegionType>Assertion</MarkerRegionType>
-    </TestStepMarkerAction>
     <LaunchApplicationAction UIObjectName="UIMap.UIForm1Window">
       <ParameterName />
       <FileName>C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\bin\Debug\NguyenDuyHai_2001181091.exe</FileName>
@@ -171,19 +93,19 @@
     </SendKeysAction>
     <SetValueAction UIObjectName="UIMap.UIForm1Window.UITxtXepLoaiWindow.UITxtXepLoaiEdit">
       <ParameterName />
-      <Value Encoded="false">88</Value>
+      <Value Encoded="false">55</Value>
       <Type>String</Type>
     </SetValueAction>
     <MouseAction UIObjectName="UIMap.UIForm1Window.UIForm1Client.UIXếploạiWindow">
       <ParameterName />
       <ModifierKeys>None</ModifierKeys>
       <IsGlobalHotkey>false</IsGlobalHotkey>
-      <Location X="278" Y="160" />
+      <Location X="237" Y="162" />
       <WheelDirection>0</WheelDirection>
       <ActionType>Click</ActionType>
       <MouseButton>Left</MouseButton>
     </MouseAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="RecordedMethod2">
+    <TestStepMarkerAction Comment="" MarkerInformation="RecordedMethod1">
       <ParameterName />
       <StepId>-1</StepId>
       <Direction>Start</Direction>
@@ -200,7 +122,7 @@
       <Type>String</Type>
       <PropertyCondition>AreEqual</PropertyCondition>
     </AssertAction>
-    <TestStepMarkerAction Comment="" MarkerInformation="AssertMethod2">
+    <TestStepMarkerAction Comment="" MarkerInformation="AssertMethod1">
       <ParameterName />
       <StepId>-1</StepId>
       <Direction>Start</Direction>
@@ -215,7 +137,7 @@
   <Maps>
     <UIMap Id="UIMap">
       <TopLevelWindows>
-        <TopLevelWindow ControlType="Window" Id="UIForm1Window" FriendlyName="Form1" SpecialControlType="None" SessionId="67870">
+        <TopLevelWindow ControlType="Window" Id="UIForm1Window" FriendlyName="Form1" SpecialControlType="None" SessionId="11667042">
           <TechnologyName>MSAA</TechnologyName>
           <WindowTitles>
             <WindowTitle>Form1</WindowTitle>
@@ -354,6 +276,37 @@
                 </UIObject>
               </Descendants>
             </UIObject>
+            <UIObject ControlType="Window" Id="UITxtXepLoaiWindow" FriendlyName="txtXepLoai" SpecialControlType="None">
+              <TechnologyName>MSAA</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Form1</WindowTitle>
+              </WindowTitles>
+              <SearchConfigurations>
+                <SearchConfiguration>VisibleOnly</SearchConfiguration>
+              </SearchConfigurations>
+              <AndCondition Id="SearchCondition">
+                <PropertyCondition Name="ControlName">txtXepLoai</PropertyCondition>
+                <PropertyCondition Name="ControlType">Window</PropertyCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Edit" Id="UITxtXepLoaiEdit" FriendlyName="txtXepLoai" SpecialControlType="None">
+                  <TechnologyName>MSAA</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Form1</WindowTitle>
+                  </WindowTitles>
+                  <SearchConfigurations>
+                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
+                  </SearchConfigurations>
+                  <AndCondition Id="SearchCondition">
+                    <PropertyCondition Name="Name">Kết quả xếp loại</PropertyCondition>
+                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
             <UIObject ControlType="Client" Id="UIForm1Client" FriendlyName="Form1" SpecialControlType="None">
               <TechnologyName>MSAA</TechnologyName>
               <WindowTitles>
@@ -398,37 +351,6 @@
                     <PropertyCondition Name="ControlType">Window</PropertyCondition>
                   </AndCondition>
                   <SupportLevel>100</SupportLevel>
-                  <Descendants />
-                </UIObject>
-              </Descendants>
-            </UIObject>
-            <UIObject ControlType="Window" Id="UITxtXepLoaiWindow" FriendlyName="txtXepLoai" SpecialControlType="None">
-              <TechnologyName>MSAA</TechnologyName>
-              <WindowTitles>
-                <WindowTitle>Form1</WindowTitle>
-              </WindowTitles>
-              <SearchConfigurations>
-                <SearchConfiguration>VisibleOnly</SearchConfiguration>
-              </SearchConfigurations>
-              <AndCondition Id="SearchCondition">
-                <PropertyCondition Name="ControlName">txtXepLoai</PropertyCondition>
-                <PropertyCondition Name="ControlType">Window</PropertyCondition>
-              </AndCondition>
-              <SupportLevel>0</SupportLevel>
-              <Descendants>
-                <UIObject ControlType="Edit" Id="UITxtXepLoaiEdit" FriendlyName="txtXepLoai" SpecialControlType="None">
-                  <TechnologyName>MSAA</TechnologyName>
-                  <WindowTitles>
-                    <WindowTitle>Form1</WindowTitle>
-                  </WindowTitles>
-                  <SearchConfigurations>
-                    <SearchConfiguration>VisibleOnly</SearchConfiguration>
-                  </SearchConfigurations>
-                  <AndCondition Id="SearchCondition">
-                    <PropertyCondition Name="Name">Kết quả xếp loại</PropertyCondition>
-                    <PropertyCondition Name="ControlType">Edit</PropertyCondition>
-                  </AndCondition>
-                  <SupportLevel>0</SupportLevel>
                   <Descendants />
                 </UIObject>
               </Descendants>
