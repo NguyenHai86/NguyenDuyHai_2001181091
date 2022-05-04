@@ -57,10 +57,16 @@ namespace NguyenDuyHai_2001181091
             if (textBox.Text.Length == 0)
             {
                 errorProvider.SetError(control, "Khong duoc de trong");
-                control.Focus();
+            }
+            else if(float.Parse(textBox.Text) > 10)
+            {
+                errorProvider.SetError(control, "Diem khong duoc lon hon 10");
             }
             else
+            {
                 errorProvider.Clear();
+            }
+                
         }
         private void txtDiemToan_Leave(object sender, EventArgs e)
         {
@@ -77,6 +83,24 @@ namespace NguyenDuyHai_2001181091
             textBox_Leave(sender, e);
         }
 
+        private bool checkControlTextBox(Control control)
+        {
+            foreach (Control item in control.Controls)
+            {
+                if (item is TextBox)
+                {
+                    if (((TextBox)item).ReadOnly == false)
+                    {
+                        if (errorProvider.GetError(control) != "" || item.Text.Length == 0 || int.Parse(item.Text) < 0 || int.Parse(item.Text) > 10)
+                        {
+                            control.Focus();
+                            return false;
+                        }
+                    }
+                }
+            }
+            return true;
+        }
         private void txtDiemRenLuyen_Leave(object sender, EventArgs e)
         {
             textBox_Leave(sender, e);
@@ -84,11 +108,8 @@ namespace NguyenDuyHai_2001181091
 
         private void btnXepLoai_Click(object sender, EventArgs e)
         {
-            if (errorProvider.GetError(txtDiemToan) != "" || errorProvider.GetError(txtDiemLy) != "" || errorProvider.GetError(txtDiemHoa) != "" || errorProvider.GetError(txtDiemRenLuyen) != "")
-            {
-                MessageBox.Show("Chưa nhập đủ thông tin");
+            if (checkControlTextBox(this) == false)
                 return;
-            }
             float diemToan = float.Parse(txtDiemToan.Text);
             float diemLy = float.Parse(txtDiemLy.Text);
             float diemHoa = float.Parse(txtDiemRenLuyen.Text);

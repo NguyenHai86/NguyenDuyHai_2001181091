@@ -32,7 +32,7 @@ namespace CodedUITestProject
         /// <summary>
         /// RecordedMethod_addValueNumber - Use 'RecordedMethod_addValueNumberParams' to pass parameters into this method.
         /// </summary>
-        public void RecordedMethod_addValueNumber(float diemToan, float diemLy, float diemHoa, float diemRenLuyen)
+        public void RecordedMethod_addValueNumber(string diemToan, string diemLy, string diemHoa, string diemRenLuyen)
         {
             #region Variable Declarations
             WinEdit uITxtDiemToanEdit = this.UIForm1Window.UITxtDiemToanWindow.UITxtDiemToanEdit;
@@ -46,25 +46,25 @@ namespace CodedUITestProject
             ApplicationUnderTest uIForm1Window = ApplicationUnderTest.Launch(this.RecordedMethod_addValueNumberParams.UIForm1WindowExePath, this.RecordedMethod_addValueNumberParams.UIForm1WindowAlternateExePath);
 
             // Type '8' in 'txtDiemToan' text box
-            uITxtDiemToanEdit.Text = diemToan.ToString();
+            uITxtDiemToanEdit.Text = diemToan;
 
             // Type '{Tab}' in 'txtDiemToan' text box
             Keyboard.SendKeys(uITxtDiemToanEdit, this.RecordedMethod_addValueNumberParams.UITxtDiemToanEditSendKeys, ModifierKeys.None);
 
             // Type '9' in 'txtDiemLy' text box
-            uITxtDiemLyEdit.Text = diemLy.ToString();
+            uITxtDiemLyEdit.Text = diemLy;
 
             // Type '{Tab}' in 'txtDiemLy' text box
             Keyboard.SendKeys(uITxtDiemLyEdit, this.RecordedMethod_addValueNumberParams.UITxtDiemLyEditSendKeys, ModifierKeys.None);
 
             // Type '5' in 'txtDiemHoa' text box
-            uITxtDiemHoaEdit.Text = diemHoa.ToString();
+            uITxtDiemHoaEdit.Text = diemHoa;
 
             // Type '{Tab}' in 'txtDiemHoa' text box
             Keyboard.SendKeys(uITxtDiemHoaEdit, this.RecordedMethod_addValueNumberParams.UITxtDiemHoaEditSendKeys, ModifierKeys.None);
 
             // Type '6' in 'txtDiemRenLuyen' text box
-            uITxtDiemRenLuyenEdit.Text = diemRenLuyen.ToString();
+            uITxtDiemRenLuyenEdit.Text = diemRenLuyen;
 
             // Type '{Tab}' in 'txtDiemRenLuyen' text box
             Keyboard.SendKeys(uITxtDiemRenLuyenEdit, this.RecordedMethod_addValueNumberParams.UITxtDiemRenLuyenEditSendKeys, ModifierKeys.None);

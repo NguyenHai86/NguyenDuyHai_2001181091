@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Windows.Input;
+using System.Xml;
 using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
 
 
@@ -18,19 +19,36 @@ namespace CodedUITestProject
     [CodedUITest]
     public class CodedUITest1
     {
+        private UIMap map;
+        private TestContext testContext;
+        public TestContext TestContext1 { get => testContext; set => testContext = value; }
+
         public CodedUITest1()
         {
         }
 
+
         [TestMethod]
         public void CodedUITestMethod1()
         {
-
-            this.UIMap.RecordedMethod_addValueNumber(9,8,9,7);
+            this.UIMap.RecordedMethod_addValueNumber("2","4","6","8");
             this.UIMap.AssertMethod_XepLoai("Yeu");
 
         }
-
+        [TestMethod]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\testData.csv", "testData#csv", DataAccessMethod.Sequential), DeploymentItem("testData.csv")]
+        public void CodedUITestMethod2()
+        {
+            string diemToan, diemLy, diemHoa, diemRenLuyen;
+            string xepLoai;
+            diemToan = TestContext.DataRow[0].ToString();
+            diemLy = TestContext.DataRow[1].ToString();
+            diemHoa = TestContext.DataRow[2].ToString();
+            diemRenLuyen = TestContext.DataRow[3].ToString();
+            xepLoai = TestContext.DataRow[4].ToString();
+            this.UIMap.RecordedMethod_addValueNumber(diemToan, diemLy, diemHoa, diemRenLuyen);
+            this.UIMap.AssertMethod_XepLoai(xepLoai);
+        }
         #region Additional test attributes
 
         // You can use the following additional attributes as you write your tests:
@@ -81,6 +99,8 @@ namespace CodedUITestProject
             }
         }
 
-        private UIMap map;
+        
+
+        
     }
 }

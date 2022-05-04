@@ -45,6 +45,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +64,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="testData.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="UIMap.uitest" />
   </ItemGroup>
   <Choose>

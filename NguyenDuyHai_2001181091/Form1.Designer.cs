@@ -140,6 +140,7 @@ namespace NguyenDuyHai_2001181091
             this.txtXepLoai.Location = new System.Drawing.Point(172, 274);
             this.txtXepLoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtXepLoai.Name = "txtXepLoai";
+            this.txtXepLoai.ReadOnly = true;
             this.txtXepLoai.Size = new System.Drawing.Size(202, 30);
             this.txtXepLoai.TabIndex = 9;
             // 

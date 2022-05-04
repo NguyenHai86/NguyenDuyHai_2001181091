@@ -7,3 +7,4 @@ C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.csproj.CoreCompileInputs.cache
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.exe
 C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.pdb
+C:\Users\nguye\Desktop\NguyenDuyHai_2001181091\NguyenDuyHai_2001181091\obj\Debug\NguyenDuyHai_2001181091.csproj.AssemblyReference.cache
