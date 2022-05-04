@@ -91,7 +91,7 @@ namespace NguyenDuyHai_2001181091
                 {
                     if (((TextBox)item).ReadOnly == false)
                     {
-                        if (errorProvider.GetError(control) != "" || item.Text.Length == 0 || int.Parse(item.Text) < 0 || int.Parse(item.Text) > 10)
+                        if (errorProvider.GetError(control) != "" || item.Text.Length == 0 || float.Parse(item.Text) < 0 || float.Parse(item.Text) > 10)
                         {
                             control.Focus();
                             return false;

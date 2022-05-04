@@ -26,7 +26,11 @@ namespace CodedUITestProject
         public CodedUITest1()
         {
         }
-
+        [TestInitialize]
+        public void setup()
+        {
+            Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.Disabled;
+        }
 
         [TestMethod]
         public void CodedUITestMethod1()
@@ -35,6 +39,23 @@ namespace CodedUITestProject
             this.UIMap.AssertMethod_XepLoai("Yeu");
 
         }
+        [TestMethod]
+        public void CodedUITestMethodRandom()
+        {
+            Random rd = new Random();
+            this.UIMap.RecordedMethod_addValueNumber(rd.Next(1,10).ToString(), rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString());
+
+        }
+        [TestMethod]
+        public void CodedUITestMethodRandom10()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Random rd = new Random();
+                this.UIMap.RecordedMethod_addValueNumber(rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString(), rd.Next(1, 10).ToString());
+            }
+        }
+
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\testData.csv", "testData#csv", DataAccessMethod.Sequential), DeploymentItem("testData.csv")]
         public void CodedUITestMethod2()

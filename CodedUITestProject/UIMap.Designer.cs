@@ -28,7 +28,6 @@ namespace CodedUITestProject
     [GeneratedCode("Coded UITest Builder", "16.0.31306.167")]
     public partial class UIMap
     {
-        
         /// <summary>
         /// RecordedMethod_addValueNumber - Use 'RecordedMethod_addValueNumberParams' to pass parameters into this method.
         /// </summary>
